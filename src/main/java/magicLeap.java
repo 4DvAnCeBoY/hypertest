@@ -17,8 +17,8 @@ import java.util.Properties;
 
 public class magicLeap {
 
-    public String username = "prateeks";
-    public String accesskey = "IuCSesD83A7LsTFzEKS0Lb6tzvEfBQ38DMkFTEpudatxxxsdjH";
+    public String username = System.getenv("LT_USERNAME");
+    public String accesskey = System.getenv("LT_ACCESS_KEY");
     public RemoteWebDriver driver;
     public String gridURL = "hub.lambdatest.com"; // "@eu-central-1-hub.lambdatest.com/wd/hub";
     String status;
